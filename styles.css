@@ -1,0 +1,120 @@
+body {
+  background-color: #050008;
+}
+
+.gran,
+.gran-span {
+  font-family: "Dela Gothic One";
+  font-size: 7vw;
+  font-weight: 600;
+  color: rgb(50, 252, 252);
+  margin-top: 0;
+  padding-left: 0;
+  user-select: none;
+  animation: gran 5s infinite ease alternate;
+  position: relative;
+}
+
+@keyframes gran {
+  from {
+    text-shadow: 0 0 25px;
+  }
+  to {
+    text-shadow: 0 0 125px;
+  }
+}
+
+.turismo {
+  color: rgb(255, 39, 39);
+  animation: turismo 40s infinite linear alternate;
+}
+
+@keyframes turismo {
+  from {
+    text-shadow: 0 0 50px;
+  }
+  to {
+    text-shadow: 0 0 100px;
+  }
+}
+
+.videos {
+  height: 100vh;
+  width: 100vw;
+  opacity: 30%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.start {
+  display: block;
+  margin-top: 35vh;
+  text-align: center;
+}
+
+.name-div,
+.name-div-other {
+  display: block;
+  margin: auto;
+  margin-left: 3.1vw;
+  margin-top: 26vh;
+  width: 30vw;
+  height: 25vh;
+  background-color: rgba(255, 0, 0, 0);
+  border: 35px solid white;
+  border-radius: 200px;
+  box-shadow: 4px 0px 44px -9px rgba(158, 125, 158, 1);
+  box-shadow: 4px 0px 44px -9px rgba(158, 125, 158, 1);
+  position: absolute;
+}
+
+.name-div-other {
+  margin-left: 63.5vw;
+}
+
+.extender {
+  height: 85vh;
+}
+
+.jan,
+.jan-intro {
+  font-family: "Dela Gothic One";
+  font-size: 2vw;
+  color: white;
+  margin-top: 2vh;
+  margin-left: 2vw;
+}
+
+.jan-intro {
+  margin-left: 2vw;
+  font-size: 1.4vw;
+  margin-top: -2.5vh;
+}
+
+.text-div {
+  display: flex;
+}
+
+.jan-text {
+  font-family: "Dela Gothic One";
+  padding-right: 59vw;
+  margin-left: 3vw;
+  margin-top: 60vh;
+  font-size: 2vw;
+  color: white;
+}
+
+.jack {
+  font-family: "Dela Gothic One";
+  font-size: 2vw;
+  color: white;
+  margin-top: 2vh;
+  margin-left: 2vw;
+}
+
+.gran-span {
+  font-size: 1.4vw;
+  margin-left: 0vw;
+  margin-top: -1vh;
+}
