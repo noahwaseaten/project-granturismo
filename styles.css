@@ -27,6 +27,7 @@ html {
   position: relative;
 }
 
+
 .turismo {
   font-family: "Gothic";
   user-select: none;
@@ -34,6 +35,13 @@ html {
   text-shadow: 0 0 150px;
 }
 
+.turismo-text {
+  font-family: "Gothic";
+  font-size: 0.7em;
+  user-select: none;
+  color: rgb(255, 39, 39);
+  text-shadow: 0 0 150px;
+}
 
 .videos {
   height: 100vh;
@@ -50,28 +58,14 @@ html {
   text-align: center;
 }
 
-.name-div,
-.name-div-other {
-  display: block;
-  margin: auto;
-  margin-left: 3.1vw;
-  margin-top: 32vh;
-  width: 30vw;
-  height: 25vh;
-  background-color: rgba(255, 0, 0, 0);
-  border: 35px solid white;
-  border-radius: 200px;
-  box-shadow: 4px 0px 44px -9px rgba(158, 125, 158, 1);
-  box-shadow: 4px 0px 44px -9px rgba(158, 125, 158, 1);
-  position: absolute;
-}
-
-.name-div-other {
-  margin-left: 64.5vw;
-}
-
-.extender {
+.extender, .extender2 {
+  margin-top: 53vh;
   height: 85vh;
+}
+
+.extender2 {
+  margin-top: 0;
+  height: 5vh;
 }
 
 .jan,
@@ -87,12 +81,15 @@ html {
 .jan-intro, .jack-intro {
   margin-left: 2vw;
   font-size: 1.4vw;
-  margin-top: -2.5vh;
+  margin-top: -3.5vh;
 }
-
 
 .text-div {
   display: flex;
+}
+
+.jan-div {
+  height: 80vh;
 }
 
 .jack {
@@ -109,7 +106,7 @@ html {
   margin-top: -1vh;
 }
 
-.button {
+.button, .button2 {
   font-family: 'Dela Gothic One';
   user-select: none;
   color: black;
@@ -118,12 +115,17 @@ html {
   border-radius: 75px;
   position: absolute;
   margin-top: -115vh;
-  margin-left: 46.7vw;
+  margin-left: 45vw;
   font-size: 7em;
   height: 5.5vh;
   width: 8vw;
   transition: 0.2s;
   box-shadow: 0 0 50px cyan;
+}
+
+.button2 {
+  margin-bottom: 50vh;
+  margin-top: -5vh;
 }
 
 .button:hover {
@@ -132,29 +134,58 @@ html {
   box-shadow: 0 0 75px cyan;
 }
 
-.jan-text {
+.name-div,
+.name-div-other {
+  display: block;
+  margin: auto;
+  margin-left: 1.8vw;
+  margin-top: 36.5vh;
+  width: 45vw;
+  height: 19vh;
+  background-color: rgba(255, 0, 0, 0);
+  border: 35px solid white;
+  border-radius: 200px;
+  box-shadow: 4px 0px 44px -9px rgba(158, 125, 158, 1);
+  box-shadow: 4px 0px 44px -9px rgba(158, 125, 158, 1);
+  position: absolute;
+}
+
+.name-div-other {
+  width: 45.8vw;
+  margin-left: 50.8vw;
+}
+
+.jan-text, .jack-text {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  padding-right: 30vw;
-  margin-right: 35vw;
-  margin-left: 4vw;
-  margin-top: 60vh;
+  margin-right: 53vw;
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
+  margin-left: 1vw;
+  width: 43.7vw;
+  margin-top: 35vh;
+  height: 91.5vh;
   font-size: 2vw;
   color: white;
+  border: 25px solid white;
+  box-shadow: 4px 0px 88px -9px rgba(158, 125, 158, 1);
+  border-radius: 200px;
   position: absolute;
 }
 
 .jack-text {
   position: relative;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  padding-left: 65vw;
-  margin-left: 0vw;
-  margin-top: 60vh;
+  margin-right: 0vw;
+  width: 44.5vw;
+  height: 91.5vh;
+  margin-left: 50vw;
+  margin-top: 35vh;
   color: white;
   font-size: 2vw;
 }
 
 .redirect {
-  margin-top: 30vh;
+  margin-top: -102.5vh;
   width: 30vw;
   height: 5vh;
 }
@@ -162,4 +193,9 @@ html {
 a {
   color: black;
   text-decoration: none;
+}
+
+.retired {
+  color: gray;
+  text-shadow: 0 0 33px;
 }
