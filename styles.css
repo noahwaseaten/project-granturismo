@@ -2,41 +2,32 @@ body {
   background-color: #050008;
 }
 
+@font-face {
+  font-family: 'Gothic';
+  src: url('fonts/gothic2.woff2') format('woff2'),
+  url('fonts/gothic1.woff') format('woff');
+
+}
+
 .gran,
 .gran-span {
-  font-family: "Dela Gothic One";
-  font-size: 7vw;
+  font-weight: 700;
+  font-family: "Gothic";
+  font-size: 6vw;
   font-weight: 600;
   color: rgb(50, 252, 252);
   margin-top: 0;
   padding-left: 0;
   user-select: none;
-  animation: gran 5s infinite ease alternate;
+  text-shadow: 0 0 125px;
   position: relative;
-}
-
-@keyframes gran {
-  from {
-    text-shadow: 0 0 25px;
-  }
-  to {
-    text-shadow: 0 0 125px;
-  }
 }
 
 .turismo {
   color: rgb(255, 39, 39);
-  animation: turismo 40s infinite linear alternate;
+  text-shadow: 0 0 150px;
 }
 
-@keyframes turismo {
-  from {
-    text-shadow: 0 0 50px;
-  }
-  to {
-    text-shadow: 0 0 100px;
-  }
-}
 
 .videos {
   height: 100vh;
@@ -58,7 +49,7 @@ body {
   display: block;
   margin: auto;
   margin-left: 3.1vw;
-  margin-top: 26vh;
+  margin-top: 32vh;
   width: 30vw;
   height: 25vh;
   background-color: rgba(255, 0, 0, 0);
@@ -70,7 +61,7 @@ body {
 }
 
 .name-div-other {
-  margin-left: 63.5vw;
+  margin-left: 64.5vw;
 }
 
 .extender {
@@ -78,7 +69,8 @@ body {
 }
 
 .jan,
-.jan-intro {
+.jan-intro, 
+.jack-intro {
   font-family: "Dela Gothic One";
   font-size: 2vw;
   color: white;
@@ -86,20 +78,21 @@ body {
   margin-left: 2vw;
 }
 
-.jan-intro {
+.jan-intro, .jack-intro {
   margin-left: 2vw;
   font-size: 1.4vw;
   margin-top: -2.5vh;
 }
+
 
 .text-div {
   display: flex;
 }
 
 .jan-text {
-  font-family: "Dela Gothic One";
-  padding-right: 59vw;
-  margin-left: 3vw;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding-right: 55vw;
+  margin-left: 4vw;
   margin-top: 60vh;
   font-size: 2vw;
   color: white;
@@ -117,4 +110,26 @@ body {
   font-size: 1.4vw;
   margin-left: 0vw;
   margin-top: -1vh;
+}
+
+.button {
+  user-select: none;
+  color: black;
+  border: 8px solid cyan;
+  background-color: cyan;
+  border-radius: 75px;
+  position: absolute;
+  margin-top: -105vh;
+  margin-left: 46.7vw;
+  font-size: 6em;
+  height: 5vh;
+  width: 5vw;
+  transition: 0.3s;
+  box-shadow: 0 0 50px cyan;
+}
+
+.button:hover {
+  background-color: rgba(0, 255, 255, 0.363);
+  transition: 0.3s;
+  box-shadow: 0 0 90px cyan;
 }
