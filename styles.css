@@ -33,7 +33,7 @@ html {
 }
 
 
-.turismo {
+.turismo, .turismo-text {
   font-family: "Gothic";
   user-select: none;
   color: rgb(255, 39, 39);
@@ -41,11 +41,7 @@ html {
 }
 
 .turismo-text {
-  font-family: "Gothic";
   font-size: 0.7em;
-  user-select: none;
-  color: rgb(255, 39, 39);
-  text-shadow: 0 0 15px;
 }
 
 .videos {
@@ -76,7 +72,7 @@ html {
 .extenderplot {
   width: 5vw;
   height: 5vw;
-  margin-top: 89.8vh;
+  margin-top: 129vh;
   height: 10vh;
 }
 
@@ -122,22 +118,23 @@ html {
 .button, .button2, .button-plot {
   font-family: 'Dela Gothic One';
   user-select: none;
+  padding-bottom: 4vh;
   color: black;
   border: 8px solid cyan;
   background-color: cyan;
   border-radius: 75px;
   position: absolute;
-  margin-top: -130vh;
+  margin-top: -128vh;
   margin-left: 44.8vw;
-  font-size: 1.5em;
-  height: 5.5vh;
+  font-size: 1.4em;
+  height: 5vh;
   width: 8vw;
   transition: 0.2s;
   box-shadow: 0 0 25px cyan;
 }
 
 .button-plot {
-  margin-top: -45vw;
+  margin-top: -73vw;
   width: 9vw;
 }
 
@@ -180,7 +177,7 @@ html {
   padding-right: 1.5vw;
   margin-left: 1vw;
   width: 42.7vw;
-  margin-top: 37vh;
+  margin-top: 35vh;
   height: 91.5vh;
   font-size: 1.9vw;
   color: white;
@@ -202,10 +199,16 @@ html {
   font-size: 2vw;
 }
 
-.redirect {
+.redirect, .redirect2 {
   margin-top: -102.5vh;
   width: 30vw;
   height: 5vh;
+}
+
+.redirect2 {
+  width: 10vw;
+  height: 5vh;
+  margin-top: -137vh;
 }
 
 a {
@@ -225,4 +228,11 @@ a {
   margin-top: 28vh;
   color: white;
   font-size: 2vw;
+}
+
+.two {
+  border: 5px solid cyan;
+  border-radius: 50px;
+  box-shadow: 0 0 40px cyan; 
+  height: 55vh;
 }
