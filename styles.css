@@ -3,10 +3,9 @@ body {
 }
 
 @font-face {
-  font-family: 'Gothic';
-  src: url('fonts/gothic2.woff2') format('woff2'),
-  url('fonts/gothic1.woff') format('woff');
-
+  font-family: "Gothic";
+  src: url("fonts/gothic2.woff2") format("woff2"),
+    url("fonts/gothic1.woff") format("woff");
 }
 
 html {
@@ -14,7 +13,9 @@ html {
 }
 
 .gran,
-.gran-span, .gran-plot {
+.gran-span,
+.gran-plot,
+.gran-scenes {
   font-weight: 700;
   font-family: "Gothic";
   font-size: 6vw;
@@ -32,8 +33,15 @@ html {
   font-family: "Dela Gothic One";
 }
 
+.gran-scenes {
+  margin-top: -4vh;
+  text-shadow: 0 0 10px 2px white;
+  color: white;
+  font-family: "Dela Gothic One";
+}
 
-.turismo, .turismo-text {
+.turismo,
+.turismo-text {
   font-family: "Gothic";
   user-select: none;
   color: rgb(255, 39, 39);
@@ -44,7 +52,8 @@ html {
   font-size: 0.7em;
 }
 
-.videos {
+.videos,
+.scene-image {
   height: 100vh;
   width: 100vw;
   opacity: 30%;
@@ -59,25 +68,28 @@ html {
   text-align: center;
 }
 
-.extender, .extender2, .extenderplot {
-  margin-top: 53vh;
+.extender,
+.extender2,
+.extenderplot {
+  margin-top: 60vh;
   height: 85vh;
 }
 
 .extender2 {
-  margin-top: 0;
+  margin-top: -3vh;
   height: 5vh;
 }
 
 .extenderplot {
   width: 5vw;
   height: 5vw;
-  margin-top: 129vh;
-  height: 10vh;
+  position: absolute;
+  margin-top: 135vh;
+  height: 2vh;
 }
 
 .jan,
-.jan-intro, 
+.jan-intro,
 .jack-intro {
   font-family: "Dela Gothic One";
   font-size: 2vw;
@@ -86,7 +98,8 @@ html {
   margin-left: 2vw;
 }
 
-.jan-intro, .jack-intro {
+.jan-intro,
+.jack-intro {
   margin-left: 2vw;
   font-size: 1.4vw;
   margin-top: -3.5vh;
@@ -115,8 +128,12 @@ html {
   margin-top: -1vh;
 }
 
-.button, .button2, .button-plot {
-  font-family: 'Dela Gothic One';
+.button,
+.button2,
+.button-plot,
+.button-scene,
+.button-behind , .button-scene-red, .button-scene-blue {
+  font-family: "Dela Gothic One";
   user-select: none;
   padding-bottom: 4vh;
   color: black;
@@ -130,23 +147,51 @@ html {
   height: 5vh;
   width: 8vw;
   transition: 0.2s;
-  box-shadow: 0 0 25px cyan;
+  box-shadow: 0 0 20px cyan;
+}
+
+.button-behind {
+  margin-top: -100vh;
 }
 
 .button-plot {
-  margin-top: -73vw;
+  margin-top: -151vh;
   width: 9vw;
 }
 
+.button-scene, .button-scene-red {
+  margin-top: 5vh;
+  margin-left: 45vw;
+  transition: 0.2s;
+  box-shadow: 0 0 25px red;
+  border: 8px solid red;
+  background-color: red;
+}
+
+.button-scene-red, .button-scene-red, .button-scene-blue {
+  margin-top: -5vh;
+  margin-left: 50px;
+  position: relative;
+}
+
+
 .button2 {
-  margin-bottom: 50vh;
+  position: relative;
   margin-top: -5vh;
 }
 
-.button:hover {
+.button:hover,
+.button2:hover,
+.button-plot:hover, .button-scene-blue:hover {
   background-color: rgba(0, 255, 255, 0.363);
   transition: 0.2s;
-  box-shadow: 0 0 50px cyan;
+  box-shadow: 0 0 30px cyan;
+}
+
+.button-scene:hover, .button-scene-red:hover {
+  background-color: rgb(255, 88, 88);
+  transition: 0.2s;
+  box-shadow: 0 0 40px red;
 }
 
 .name-div,
@@ -154,7 +199,7 @@ html {
   display: block;
   margin: auto;
   margin-left: 1.9vw;
-  margin-top: 36.5vh;
+  margin-top: 37.5vh;
   width: 44vw;
   height: 19vh;
   background-color: rgba(255, 0, 0, 0);
@@ -170,16 +215,18 @@ html {
   margin-left: 50.5vw;
 }
 
-.jan-text, .jack-text {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.jan-text,
+.jack-text {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   margin-right: 53vw;
   padding-left: 1.5vw;
   padding-right: 1.5vw;
   margin-left: 1vw;
   width: 42.7vw;
-  margin-top: 35vh;
+  margin-top: 36vh;
+  padding-top: 10px;
   height: 91.5vh;
-  font-size: 1.9vw;
+  font-size: 1.95vw;
   color: white;
   border: 12px solid white;
   box-shadow: 0px 0px 88px -9px rgba(158, 125, 158, 1);
@@ -189,26 +236,33 @@ html {
 
 .jack-text {
   position: relative;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   margin-right: 0vw;
   width: 44.1vw;
   height: 91.5vh;
   margin-left: 49.7vw;
-  margin-top: 35vh;
+  margin-top: 36vh;
+  padding-top: 0;
   color: white;
   font-size: 2vw;
 }
 
-.redirect, .redirect2 {
+.redirect,
+.redirect2,
+.redirect3 {
   margin-top: -102.5vh;
   width: 30vw;
   height: 5vh;
 }
 
+.redirect3 {
+  margin-top: -140vh;
+}
+
 .redirect2 {
   width: 10vw;
   height: 5vh;
-  margin-top: -137vh;
+  margin-top: -142vh;
 }
 
 a {
@@ -222,10 +276,10 @@ a {
 }
 
 .plot-text {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   padding-left: 13vw;
   padding-right: 13vw;
-  margin-top: 28vh;
+  margin-top: 29vh;
   color: white;
   font-size: 2vw;
 }
@@ -233,6 +287,43 @@ a {
 .two {
   border: 5px solid cyan;
   border-radius: 50px;
-  box-shadow: 0 0 40px cyan; 
+  box-shadow: 0 0 22px cyan;
   height: 55vh;
+}
+
+.car {
+  border: 2px solid red;
+  box-shadow: 0 0 10px red;
+  background-clip: content-box, border-box;
+  border-radius: 10px;
+  margin-left: 22vw;
+  width: 55vw;
+}
+
+
+.turismo-shadow {
+  box-shadow: 0 3px 30px red;
+  border-radius: 40px;
+  margin-top: vw;
+  position: absolute;
+  margin-left: 25vw;
+  border: 5px solid red;
+  background-color: #0a000f00;
+  width: 25vw;
+  height: 52.3vh;
+}
+
+.flex, .flex-plot, .flex-scene {
+  margin-top: -5vh;
+  margin-left: -10.5vw;
+  flex-direction: row;
+  display: flex;
+}
+
+.flex-plot {
+  margin-top: 7vh;
+}
+
+.flex-scene {
+  margin-top: 9vh;
 }
